@@ -91,7 +91,7 @@ class TableCreate {
 		sql += decls.join(",");
 		sql += ")";
 		if( engine != null )
-			sql += "ENGINE="+engine;
+			sql += " ENGINE="+engine;
 		cnx.request(sql);
 	}
 
